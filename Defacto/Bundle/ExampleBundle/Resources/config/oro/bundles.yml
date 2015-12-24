@@ -1,0 +1,2 @@
+bundles:
+    - { name: Defacto\Bundle\ExampleBundle\DefactoExampleBundle, priority: 100 }

@@ -1,0 +1,27 @@
+datagrid:
+    defacto-item-grid:
+        extended_entity_name: %defacto.example.entity.item.class%
+        options:
+            entityHint: Item
+        source:
+            type: orm
+            query:
+                select:
+                    - i
+                from:
+                    - { table: %defacto.example.entity.item.class%, alias: i }
+                join:
+                    inner:
+                        - { join: i.translations, alias: t }
+                        - { join: t.version, alias: v }
+        columns:
+            name:
+                type: twig
+                template: DefactoExampleBundle:Default:Datagrid/Property/name.html.twig
+                frontend_type: html
+                data_name: translations
+            translations:
+                type: twig
+                template: DefactoExampleBundle:Default:Datagrid/Property/translations.html.twig
+                frontend_type: html
+                data_name: translations

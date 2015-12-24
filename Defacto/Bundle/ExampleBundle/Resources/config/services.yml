@@ -1,0 +1,4 @@
+parameters:
+  defacto.example.entity.item.class:        Defacto\Bundle\ExampleBundle\Entity\Item
+  defacto.example.entity.translation.class: Defacto\Bundle\ExampleBundle\Entity\Translation
+  defacto.example.entity.version.class:     Defacto\Bundle\ExampleBundle\Entity\Version

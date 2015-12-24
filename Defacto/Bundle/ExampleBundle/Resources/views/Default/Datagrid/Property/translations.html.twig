@@ -1,0 +1,4 @@
+{% set item = record.rootEntity %}
+{% for translation in item.translations %}
+    <span class="label label-info">{{ translation.locale }}</span>
+{% endfor %}

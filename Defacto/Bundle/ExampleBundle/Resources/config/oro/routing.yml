@@ -1,0 +1,3 @@
+defacto_example_bundle:
+    resource:     "@DefactoExampleBundle/Controller"
+    type:         annotation
